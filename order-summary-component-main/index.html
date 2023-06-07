@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      margin: 40px;
+      width: 100%;
+      background: hsl(225, 100%, 94%);
+    }
+
+    .background-img{
+      width: 1450px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      height: 650px;
+      width: 400px;
+      background: white;
+      border-radius: 20px;
+      margin: auto;
+    }
+    .head-image1{
+      width: 400px;
+      border-radius: 20px 20px 0px 0px;
+    }
+    p{
+        font-family: 'Red Hat Display', sans-serif;
+      }
+    h1{
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: Medium 500;
+        color: hsl(223, 47%, 23%);
+        font-size: 24px;
+        text-align: center;
+        margin-top: 30px;
+      }
+    .description {
+        text-align: center;
+        line-height: 25px;
+        color: hsl(224, 23%, 55%);
+        margin-left: 40px;
+        margin-right: 40px;
+        font-size: 15px;
+      }
+
+    .annual-plan{
+        display:flex;
+        background: hsl(225, 100%, 98%);
+        height: 90px;
+        margin-left: 40px;
+        margin-right: 40px; 
+        margin-top: 40px;  
+        border-radius: 15px; 
+        font-size: 14px;   
+    }
+    .annual{
+      color: hsl(223, 47%, 23%);
+      font-weight: 700;
+      margin: 25px 0px 0px 0px;
+    
+      font-size: 15px;
+    }
+    .price{
+      margin: 0; 
+      color:hsl(224, 23%, 55%);
+      margin: 0px 0px 0px 0px;
+      font-size: 15px;
+    }
+      
+    .annual-btn{
+      background: none;
+      font-family: 'Red Hat Display', sans-serif;
+      border: none;
+      color: rgb(125, 84, 201);
+      text-decoration: underline;       
+      padding-left: 55px;
+    }
+    .annual-btn:hover{
+      text-decoration: none;
+    }
+    
+    .payment-btn button{
+      width: 320px;
+      margin: 20px 0px 20px 40px;
+      height: 45px;
+      border: none;
+      border-radius: 10px;
+      color: hsl(225, 100%, 98%);
+      background: hsl(245, 75%, 52%);
+      font-family: 'Red Hat Display', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      margin-top: 30px;
+      box-shadow: 0px 10px 20px hsl(224, 23%, 55%);
+    }
+
+    .payment-btn button:hover{
+      background: hsl(246, 47%, 67%);
+    }
+
+    .cancel-btn button{
+      border: none;
+      background: none;
+      color: hsl(224, 23%, 55%);
+      font-family: 'Red Hat Display', sans-serif;
+      font-weight: 700;
+      text-align: center;
+      width: 400px;
+      margin-top: 5px;
+      font-size: 15px;
+    }
+    .cancel-btn button:hover{
+      color:hsl(223, 47%, 23%);
+    }
+    .icon{
+        height:50px;
+        margin: 20px 20px 0px 25px;
+    }
+    
+
+  @media screen and (max-width: 375px){
+    .background-img{
+      width: 395px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .head-image1{
+      width: 320px;
+      border-radius: 15px 15px 0px 0px;  
+    }
+
+    .container{
+      width: 320px;
+      height: 545px;
+      margin: 15px;
+      background: #fff;
+      border-radius: 20px;
+    }
+
+    .content{
+      margin: 0px;
+    }
+    p{
+      font-family: 'Red Hat Display', sans-serif;
+    }
+    h1{
+      font-family: 'Red Hat Display', sans-serif;
+      font-weight: Medium 500;
+      color: hsl(223, 47%, 23%);
+      font-size: 20px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .description {
+      text-align: center;
+      line-height: 25px;
+      color: hsl(224, 23%, 55%);
+      margin-left: 40px;
+      margin-right: 40px;
+      font-size: 15px;
+    }
+
+    .annual-plan{
+      display:flex;
+      background: hsl(225, 100%, 98%);
+      height: 70px;
+      margin: 20px;   
+      border-radius: 10px; 
+      font-size: 14px;   
+    }
+      
+    .annual-btn{
+      background: none;
+      font-family: 'Red Hat Display', sans-serif;
+      border: none;
+      color: rgb(125, 84, 201);
+      text-decoration: underline;
+      padding-left: 55px;
+    }
+
+    
+    .annual{
+      color: hsl(223, 47%, 23%);
+      font-weight: 700;
+      margin: 15px 0px 2px 10px;
+    }
+    .price{
+      margin: 0px 0px 0px 10px; 
+      color:hsl(224, 23%, 55%)
+    }
+
+    .payment-btn button{
+      width: 280px;
+      margin: 10px 0px 20px 20px;
+      height: 50px;
+      border: none;
+      border-radius: 10px;
+      color: hsl(225, 100%, 98%);
+      background: hsl(245, 75%, 52%);
+      font-family: 'Red Hat Display', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      box-shadow: 0px 10px 20px hsl(224, 23%, 55%);
+    }
+
+      .payment-btn button:hover{
+        background: hsl(246, 47%, 67%);
+      }
+
+      .cancel-btn button{
+        border: none;
+        background: none;
+        color: hsl(224, 23%, 55%);
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 700;
+        text-align: center;
+        width: 320px;
+      }
+      .cancel-btn button:hover{
+        text-decoration: underline;
+      }
+      .icon{
+        height:40px;
+        margin: 15px 10px 0px 15px;
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <img class="background-img" src="./images/pattern-background-desktop.svg">
+
+  <div class="container">
+    <div class="head-image">
+      <img class="head-image1" src="./images/illustration-hero.svg">
+    </div>
+    <div class="content">
+      <h1>
+        Order Summary
+      </h1>
+      <div class="description">
+        <p>
+          You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!
+        </p>
+      </div>
+      
+    
+      <div class="annual-plan">
+        <img class="icon" src="./images/icon-music.svg">
+        <div>
+          <p class="annual">Annual Plan</p>
+          <p class="price">$59.00/Year</p>
+        </div>
+        <Button class="annual-btn">Change</Button>
+      </div>
+      <div class="payment-btn">
+        <button>Proceed to Payment</button>
+      </div>
+      <div class="cancel-btn">
+        <button>Cancel Order</button>
+      </div>
+    </div>
+
+  </div>
+
+<!--   Order Summary
+
+  You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!
+
+  Annual Plan
+  $59.99/year
+
+  Change
+
+  Proceed to Payment
+  Cancel Order
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  
+</body>
+</html>
